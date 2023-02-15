@@ -19,9 +19,6 @@ class LinkedList:
         current_node.next_node = node
 
     def remove_node(self, target_node_data):
-        if self.head is None:
-            raise Exception("List is empty")
-
         if self.head.value == target_node_data:
             self.head = self.head.next_node
             return
